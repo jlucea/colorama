@@ -11,6 +11,7 @@
 		6FD2C8432BCD003F00844668 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2C8422BCD003F00844668 /* ContentView.swift */; };
 		6FD2C8452BCD004000844668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD2C8442BCD004000844668 /* Assets.xcassets */; };
 		6FD2C8482BCD004000844668 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD2C8472BCD004000844668 /* Preview Assets.xcassets */; };
+		6FD2C84F2BCD00A800844668 /* ColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2C84E2BCD00A800844668 /* ColorGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6FD2C8422BCD003F00844668 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6FD2C8442BCD004000844668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD2C8472BCD004000844668 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6FD2C84E2BCD00A800844668 /* ColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				6FD2C8402BCD003F00844668 /* ColoramaApp.swift */,
 				6FD2C8422BCD003F00844668 /* ContentView.swift */,
+				6FD2C84E2BCD00A800844668 /* ColorGenerator.swift */,
 				6FD2C8442BCD004000844668 /* Assets.xcassets */,
 				6FD2C8462BCD004000844668 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD2C84F2BCD00A800844668 /* ColorGenerator.swift in Sources */,
 				6FD2C8432BCD003F00844668 /* ContentView.swift in Sources */,
 				6FD2C8412BCD003F00844668 /* ColoramaApp.swift in Sources */,
 			);

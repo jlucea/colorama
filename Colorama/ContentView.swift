@@ -8,15 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+        
+    @State var colors: [Color] = (1...20).map { _ in ColorGenerator.generateColor() }
+    
+    var body: some View {
+        ZStack {
+            ForEach(colors, id: \.self) { color in
+                SwipeableView(color: color)
+            }
+        }
+    }
+    
+}
+
+struct SwipeableView: View {
+    
+    @State var color: Color
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            color
         }
-        .padding()
+        .ignoresSafeArea()
     }
+    
 }
 
 #Preview {
