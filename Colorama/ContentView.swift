@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
         
-    @State var colors: [Color] = (1...20).map { _ in ColorGenerator.generateColor() }
+    @State var colors: [Color] = (1...20).map { _ in RandomColorGenerator.generate() }
     
     var body: some View {
         ZStack {

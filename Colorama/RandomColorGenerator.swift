@@ -8,9 +8,9 @@
 import Foundation
 import SwiftUI
 
-public class ColorGenerator: ObservableObject {
+public class RandomColorGenerator: ObservableObject {
                 
-    public static func generateColor() -> Color {
+    public static func generate() -> Color {
         
         let red = Double.random(in: 0...1)
         let green = Double.random(in: 0...1)
