@@ -5,9 +5,10 @@ enum MeshGradientDesign {
     case apple
     case candy
     case forest
+    case vanilla
 }
 
-struct CustomMeshGradient: View {
+struct CustomMeshGradient: View {   
     
     var design: MeshGradientDesign
     
@@ -16,10 +17,13 @@ struct CustomMeshGradient: View {
             case .apple: return AnyView(AppleMeshGradient())
             case .candy: return AnyView(CandyMeshGradient())
             case .forest: return AnyView(ForestMeshGradient())
+            case .vanilla: return AnyView(VanillaMeshGradient())
         }
     }
     
 }
+
+// MARK: -  Designs
 
 struct AppleMeshGradient: View {
     var body: some View {
@@ -75,6 +79,28 @@ struct ForestMeshGradient: View {
     
 }
 
+struct VanillaMeshGradient: View {
+    
+    var body: some View {
+        MeshGradient(
+            width: 3,
+            height: 3,
+            points: [
+                    .init(0.00, 0.00),.init(0.50, 0.00),.init(1.00, 0.00),
+        .init(0.00, 0.50),.init(0.62, 0.23),.init(1.00, 0.63),
+        .init(0.00, 1.00),.init(0.50, 1.00),.init(1.00, 1.00)
+                    ],
+            colors: [
+                   Color(hex: "#EBCECE")!,Color(hex: "#EBE7DE")!,Color(hex: "#B3ABA3")!,
+        Color(hex: "#94A3EA")!,Color(hex: "#BCB7BC")!,Color(hex: "#EBE7D5")!,
+        Color(hex: "#DACDEA")!,Color(hex: "#EBDBBD")!,Color(hex: "#C0BEBE")!
+                    ]     ,
+            smoothsColors: true
+        )
+    }
+}
+
+
 //MARK: - Previews
 
 #Preview ("Apple") {
@@ -91,3 +117,9 @@ struct ForestMeshGradient: View {
     CustomMeshGradient(design: .forest)
         .ignoresSafeArea()
 }
+
+#Preview ("Vanilla") {
+    CustomMeshGradient(design: .vanilla)
+        .ignoresSafeArea()
+}
+

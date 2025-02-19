@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct FullScreenMeshGradientView: View {
+struct FullScreenView: View {
     
     @Environment(\.dismiss) private var dismiss
     
-    let meshGradient: CustomMeshGradient
+    var meshGradient: AnyView
     
     var body: some View {
         meshGradient
@@ -25,5 +25,5 @@ struct FullScreenMeshGradientView: View {
 }
 
 #Preview {
-    FullScreenMeshGradientView(meshGradient: CustomMeshGradient(design: .forest))
+    FullScreenView(meshGradient: AnyView(CustomMeshGradient(design: .forest)))
 }

@@ -12,7 +12,6 @@ struct RandomMeshFigure: View {
     @StateObject var viewModel = RandomMeshFigureViewModel()
     
     var body: some View {
-        
         MeshGradient(width: viewModel.width, height: viewModel.height,
                      points: viewModel.points,
                      colors: viewModel.colors)
