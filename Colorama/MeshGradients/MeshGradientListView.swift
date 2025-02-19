@@ -13,7 +13,6 @@ struct MeshGradientListView: View {
     
     var body: some View {
         NavigationStack {
-            
             List {
                 Section(header: Text("Static Mesh Gradients")) {
                     ForEach(designs, id: \.self) { design in
@@ -21,7 +20,7 @@ struct MeshGradientListView: View {
                             FullScreenView(meshGradient: AnyView(CustomMeshGradient(design: design)))
                         }) {
                             CustomMeshGradient(design: design)
-                                .frame(height: 120)
+                                .frame(height: 100)
                                 .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
                     }
@@ -30,6 +29,7 @@ struct MeshGradientListView: View {
                 }
             }
             .navigationTitle("Colorama")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
     
