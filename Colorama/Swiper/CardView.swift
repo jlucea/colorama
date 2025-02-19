@@ -14,7 +14,7 @@ struct CardView: View {
         Text(text)
             .font(.largeTitle)
             .frame(width: 320, height: 550)
-            .background(RandomColorGenerator.generate())
+            .background(Color.random)
             .cornerRadius(20)
             .shadow(radius: 5)
             .overlay(

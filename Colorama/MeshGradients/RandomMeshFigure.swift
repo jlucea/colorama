@@ -40,7 +40,7 @@ final class RandomMeshFigureViewModel: ObservableObject {
             let x: Float = Float.random(in: 0...1)
             let y: Float = Float.random(in: 0...1)
             points.append(SIMD2(x, y))
-            colors.append(RandomColorGenerator.generate())
+            colors.append(Color.random)
         }
     }
     
