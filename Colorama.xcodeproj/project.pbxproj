@@ -11,8 +11,12 @@
 		6F91DA912D5D102C00C551CB /* RandomMeshFigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91DA902D5D102C00C551CB /* RandomMeshFigure.swift */; };
 		6F91DA942D6094EE00C551CB /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91DA922D6094EE00C551CB /* Color+Extension.swift */; };
 		6F91DA952D6094EE00C551CB /* PlaformColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91DA932D6094EE00C551CB /* PlaformColor+Extension.swift */; };
+		6F96265F2D65B15B0026E9DB /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F96265E2D65B1550026E9DB /* SwipeView.swift */; };
+		6F9626622D65BA430026E9DB /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9626612D65BA3E0026E9DB /* CardView.swift */; };
+		6F9626642D65BA690026E9DB /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9626632D65BA670026E9DB /* CardModel.swift */; };
+		6F9626672D65C7B60026E9DB /* MeshGradientCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9626662D65C7B60026E9DB /* MeshGradientCollectionView.swift */; };
 		6FD2C8412BCD003F00844668 /* ColoramaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2C8402BCD003F00844668 /* ColoramaApp.swift */; };
-		6FD2C8432BCD003F00844668 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2C8422BCD003F00844668 /* ContentView.swift */; };
+		6FD2C8432BCD003F00844668 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2C8422BCD003F00844668 /* MainView.swift */; };
 		6FD2C8452BCD004000844668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD2C8442BCD004000844668 /* Assets.xcassets */; };
 		6FD2C8482BCD004000844668 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FD2C8472BCD004000844668 /* Preview Assets.xcassets */; };
 		6FD2C84F2BCD00A800844668 /* RandomColorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2C84E2BCD00A800844668 /* RandomColorGenerator.swift */; };
@@ -23,9 +27,13 @@
 		6F91DA902D5D102C00C551CB /* RandomMeshFigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMeshFigure.swift; sourceTree = "<group>"; };
 		6F91DA922D6094EE00C551CB /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		6F91DA932D6094EE00C551CB /* PlaformColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaformColor+Extension.swift"; sourceTree = "<group>"; };
+		6F96265E2D65B1550026E9DB /* SwipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		6F9626612D65BA3E0026E9DB /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		6F9626632D65BA670026E9DB /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		6F9626662D65C7B60026E9DB /* MeshGradientCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientCollectionView.swift; sourceTree = "<group>"; };
 		6FD2C83D2BCD003F00844668 /* Colorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FD2C8402BCD003F00844668 /* ColoramaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoramaApp.swift; sourceTree = "<group>"; };
-		6FD2C8422BCD003F00844668 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6FD2C8422BCD003F00844668 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6FD2C8442BCD004000844668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FD2C8472BCD004000844668 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6FD2C84E2BCD00A800844668 /* RandomColorGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColorGenerator.swift; sourceTree = "<group>"; };
@@ -42,6 +50,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F2B59832D60FB4600F30C74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6F91DA922D6094EE00C551CB /* Color+Extension.swift */,
+				6F91DA932D6094EE00C551CB /* PlaformColor+Extension.swift */,
+				6FD2C84E2BCD00A800844668 /* RandomColorGenerator.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6F9626602D65BA2E0026E9DB /* Swiper */ = {
+			isa = PBXGroup;
+			children = (
+				6F9626632D65BA670026E9DB /* CardModel.swift */,
+				6F9626612D65BA3E0026E9DB /* CardView.swift */,
+				6F96265E2D65B1550026E9DB /* SwipeView.swift */,
+			);
+			path = Swiper;
+			sourceTree = "<group>";
+		};
+		6F9626652D65C4300026E9DB /* MeshGradients */ = {
+			isa = PBXGroup;
+			children = (
+				6F91DA8E2D5D0D5700C551CB /* CustomMeshGradient.swift */,
+				6F91DA902D5D102C00C551CB /* RandomMeshFigure.swift */,
+				6F9626662D65C7B60026E9DB /* MeshGradientCollectionView.swift */,
+			);
+			path = MeshGradients;
+			sourceTree = "<group>";
+		};
 		6FD2C8342BCD003F00844668 = {
 			isa = PBXGroup;
 			children = (
@@ -61,13 +99,11 @@
 		6FD2C83F2BCD003F00844668 /* Colorama */ = {
 			isa = PBXGroup;
 			children = (
-				6F91DA922D6094EE00C551CB /* Color+Extension.swift */,
-				6F91DA932D6094EE00C551CB /* PlaformColor+Extension.swift */,
+				6F2B59832D60FB4600F30C74 /* Extensions */,
+				6F9626602D65BA2E0026E9DB /* Swiper */,
+				6F9626652D65C4300026E9DB /* MeshGradients */,
 				6FD2C8402BCD003F00844668 /* ColoramaApp.swift */,
-				6FD2C8422BCD003F00844668 /* ContentView.swift */,
-				6F91DA8E2D5D0D5700C551CB /* CustomMeshGradient.swift */,
-				6FD2C84E2BCD00A800844668 /* RandomColorGenerator.swift */,
-				6F91DA902D5D102C00C551CB /* RandomMeshFigure.swift */,
+				6FD2C8422BCD003F00844668 /* MainView.swift */,
 				6FD2C8442BCD004000844668 /* Assets.xcassets */,
 				6FD2C8462BCD004000844668 /* Preview Content */,
 			);
@@ -153,12 +189,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F91DA912D5D102C00C551CB /* RandomMeshFigure.swift in Sources */,
+				6F9626622D65BA430026E9DB /* CardView.swift in Sources */,
 				6FD2C84F2BCD00A800844668 /* RandomColorGenerator.swift in Sources */,
 				6F91DA942D6094EE00C551CB /* Color+Extension.swift in Sources */,
 				6F91DA952D6094EE00C551CB /* PlaformColor+Extension.swift in Sources */,
-				6FD2C8432BCD003F00844668 /* ContentView.swift in Sources */,
+				6FD2C8432BCD003F00844668 /* MainView.swift in Sources */,
+				6F96265F2D65B15B0026E9DB /* SwipeView.swift in Sources */,
 				6F91DA8F2D5D0D5700C551CB /* CustomMeshGradient.swift in Sources */,
 				6FD2C8412BCD003F00844668 /* ColoramaApp.swift in Sources */,
+				6F9626672D65C7B60026E9DB /* MeshGradientCollectionView.swift in Sources */,
+				6F9626642D65BA690026E9DB /* CardModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

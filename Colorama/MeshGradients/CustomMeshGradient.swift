@@ -44,8 +44,7 @@ struct CandyMeshGradient: View {
                 .init(0.00, 0.00),.init(0.50, 0.00),.init(1.00, 0.00),
                 .init(0.00, 0.59),.init(0.67, 0.23),.init(1, 0.36),
                 .init(0.00, 1.00),.init(0.45, 1.00),.init(1.00, 1.00)
-            ],
-            colors: [
+            ], colors: [
                 Color(hex: "#69C4DC")!,Color(hex: "#65BEDD")!,Color(hex: "#0A83FF")!,
                 Color(hex: "#EB59E6")!,Color(hex: "#69C4DC")!,Color(hex: "#262FF8")!,
                 Color(hex: "#902FD3")!,Color(hex: "#F8D7DE")!,Color(hex: "#FFFFFF")!
@@ -63,13 +62,12 @@ struct ForestMeshGradient: View {
             height: 3,
             points: [
                     .init(0.00, 0.00),.init(0.33, 0.00),.init(0.57, 0.00),.init(1.00, 0.00),
-        .init(0.00, 0.35),.init(0.59, 0.43),.init(0.80, 0.20),.init(1.00, 0.50),
-        .init(0.00, 1.00),.init(0.33, 1.00),.init(0.66, 1.00),.init(1.00, 1.00)
-                    ],
-            colors: [
+                    .init(0.00, 0.35),.init(0.59, 0.43),.init(0.80, 0.20),.init(1.00, 0.50),
+                    .init(0.00, 1.00),.init(0.33, 1.00),.init(0.66, 1.00),.init(1.00, 1.00)
+            ], colors: [
                    Color(hex: "#3B9353")!,Color(hex: "#3B9353")!,Color(hex: "#3B9353")!,Color(hex: "#7ED9B7")!,
-        Color(hex: "#4CD94F")!,Color(hex: "#428936")!,Color(hex: "#38733A")!,Color(hex: "#31D74A")!,
-        Color(hex: "#0A110B")!,Color(hex: "#91F19D")!,Color(hex: "#D1EBCD")!,Color(hex: "#498369")!
+                   Color(hex: "#4CD94F")!,Color(hex: "#428936")!,Color(hex: "#38733A")!,Color(hex: "#31D74A")!,
+                   Color(hex: "#0A110B")!,Color(hex: "#91F19D")!,Color(hex: "#D1EBCD")!,Color(hex: "#498369")!
                     ]     ,
             smoothsColors: false
         )
