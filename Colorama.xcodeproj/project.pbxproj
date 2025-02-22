@@ -57,6 +57,21 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6F7BF2612D69E503001B14A7 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		6F7BF2622D69E564001B14A7 /* MeshFigure */ = {
+			isa = PBXGroup;
+			children = (
+				6F91DA902D5D102C00C551CB /* RandomMeshFigure.swift */,
+			);
+			path = MeshFigure;
+			sourceTree = "<group>";
+		};
 		6F9626602D65BA2E0026E9DB /* Swiper */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,9 +84,9 @@
 		6F9626652D65C4300026E9DB /* MeshGradients */ = {
 			isa = PBXGroup;
 			children = (
+				6F7BF2612D69E503001B14A7 /* Dynamic */,
 				6FD2C8422BCD003F00844668 /* MeshGradientListView.swift */,
 				6F91DA8E2D5D0D5700C551CB /* CustomMeshGradient.swift */,
-				6F91DA902D5D102C00C551CB /* RandomMeshFigure.swift */,
 				6F9626662D65C7B60026E9DB /* MeshGradientCollectionView.swift */,
 				6F9626682D65E6410026E9DB /* FullScreenView.swift */,
 			);
@@ -99,6 +114,7 @@
 			children = (
 				6F2B59832D60FB4600F30C74 /* Extensions */,
 				6F9626602D65BA2E0026E9DB /* Swiper */,
+				6F7BF2622D69E564001B14A7 /* MeshFigure */,
 				6F9626652D65C4300026E9DB /* MeshGradients */,
 				6FD2C8402BCD003F00844668 /* ColoramaApp.swift */,
 				6FD2C8442BCD004000844668 /* Assets.xcassets */,

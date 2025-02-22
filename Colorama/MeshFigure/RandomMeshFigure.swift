@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RandomMeshFigure: View {
     
-    @StateObject var viewModel = RandomMeshFigureViewModel()
+    @StateObject var viewModel = RandomMeshFigureViewModel() 
     
     var body: some View {
         MeshGradient(width: viewModel.width, height: viewModel.height,
